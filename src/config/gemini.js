@@ -9,14 +9,16 @@
  * See the getting started guide for more information
  * https://ai.google.dev/gemini-api/docs/get-started/node
  */
-
-const {
+import {
     GoogleGenerativeAI,
     HarmCategory,
     HarmBlockThreshold,
-  } = require("@google/generative-ai");
+  } from "@google/generative-ai";
   
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+//   console.log("API Key:", apiKey);
+
+
   const genAI = new GoogleGenerativeAI(apiKey);
   
   const model = genAI.getGenerativeModel({
@@ -54,12 +56,17 @@ const {
     const chatSession = model.startChat({
       generationConfig,
       safetySettings,
-      history: [
-      ],
+      history: [],
     });
   
-    const result = await chatSession.sendMessage(prompt);
-    console.log(result.response.text());
+    try {
+      const result = await chatSession.sendMessage(prompt);
+      console.log(result.response.text());
+      return result.response.text();
+    } catch (error) {
+      console.error("Error:", error.message);
+    }
   }
   
- export default run;
+  export default run;
+  

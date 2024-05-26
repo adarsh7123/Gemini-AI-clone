@@ -66,34 +66,9 @@
     cursor: pointer;
 }
  
-/* 
+
 @media (max-width: 600px) {
 	.sidebar {
 		display: none;
 	}
 }
-
-@media (prefers-color-scheme: dark) {
-	.sidebar {
-		background-color: #1a1a1a;
-	}
-
-	.sidebar .new-chat {
-		background-color: #19150e;
-	}
-
-	.sidebar .recent-entry {
-		color: #d7d7d7;
-	}
-
-	.sidebar .recent-entry:hover {
-		background-color: #1d1914;
-	}
-	
-	.recent-title{
-		color: #d7d7d7;
-	}
-	.menu{
-		color: #d7d7d7;
-	}
-} */
