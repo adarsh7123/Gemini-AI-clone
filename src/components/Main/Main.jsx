@@ -86,6 +86,9 @@ function Main() {
                     <p className="bottom-info">
                         Gemini may display inaccurate information, including about peopel, so double-check its responses. Your privacy and Gemini Apps.
                     </p>
+                    <p className="made-with-love">
+                        Made with <span role="img" aria-label="love">♥</span> by <a href="https://github.com/adarsh7123" target="_blank" rel="noopener noreferrer">Adarsh7123</a>
+                    </p>
                 </div>
 
 
