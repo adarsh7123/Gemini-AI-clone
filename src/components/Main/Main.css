@@ -181,6 +181,23 @@
     font-weight: 300;
     line-height: 1.8;
   }
+
+
+  .made-with-love {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .made-with-love a {
+    color: #e60013; /* Adjust the color as needed */
+    text-decoration: none;
+  }
+  
+  .made-with-love a:hover {
+    text-decoration: underline;
+  }
+  
   
   @media (max-width: 600px) {
     .main-bottom input{
