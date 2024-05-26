@@ -11,7 +11,14 @@ function Main() {
     return (
         <div className="main">
             <div className="nav">
-                <p>Gemini</p>
+
+                <p>
+                    <img
+                        src={assets.gemini_icon}
+                        alt="Gemini"
+                        style={{ width: "40px", height: "40px" }}
+                    />
+                    Gemini</p>
                 <img src={assets.user_icon} alt="" />
             </div>
 
@@ -73,7 +80,7 @@ function Main() {
                         <div>
                             <img src={assets.gallery_icon} alt="" />
                             <img src={assets.mic_icon} alt="" />
-                            {input?<img onClick={() => onSent()} src={assets.send_icon} alt="" />:null}
+                            {input ? <img onClick={() => onSent()} src={assets.send_icon} alt="" /> : null}
                         </div>
                     </div>
                     <p className="bottom-info">
